@@ -736,9 +736,9 @@ nav > div:last-child > a.active:after {
 
 
 
-/* ======================================================= */
+
 /* --- ESTILOS ESPECÍFICOS PARA LA PÁGINA DE OFERTAS --- */
-/* ======================================================= */
+
 
 .ofertas-container {
     padding: 120px 60px 60px 60px;
@@ -770,7 +770,7 @@ nav > div:last-child > a.active:after {
     line-height: 1.6;
 }
 
-/* --- CONTROLES DE FILTRO Y ORDENACIÓN --- */
+
 .offer-controls {
     display: flex;
     justify-content: space-between;
@@ -791,7 +791,7 @@ nav > div:last-child > a.active:after {
 
 .offer-controls label {
     font-weight: 600;
-    color: #ecad29; /* Color de acento */
+    color: #ecad29; 
     font-size: 1rem;
 }
 
@@ -812,7 +812,7 @@ nav > div:last-child > a.active:after {
 }
 
 
-/* --- GRID Y TARJETAS DE OFERTA --- */
+
 .ofertas-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -838,7 +838,7 @@ nav > div:last-child > a.active:after {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
 }
 
-/* Etiquetas (Tags) en la esquina */
+
 .tag {
     position: absolute;
     top: 20px;
@@ -852,21 +852,21 @@ nav > div:last-child > a.active:after {
     color: #1a1a1a;
     z-index: 10;
 }
-/* Colores de las etiquetas */
-.tag.lujo { background-color: #ffd700; } /* Oro */
-.tag.vuelo { background-color: #007bff; color: white; } /* Azul */
-.tag.hotel { background-color: #28a745; color: white; } /* Verde */
-.tag.cultura { background-color: #dc3545; color: white; } /* Rojo */
-.tag.aventura { background-color: #ff9900; } /* Naranja */
-.tag.flash { background-color: #ff00ff; color: #1a1a1a; } /* Fucsia */
-.tag.transoceánico { background-color: #00ffff; } /* Cian */
-.tag.centro { background-color: #999999; } /* Gris */
+
+.tag.lujo { background-color: #ffd700; } 
+.tag.vuelo { background-color: #007bff; color: white; } 
+.tag.hotel { background-color: #28a745; color: white; } 
+.tag.cultura { background-color: #dc3545; color: white; } 
+.tag.aventura { background-color: #ff9900; } 
+.tag.flash { background-color: #ff00ff; color: #1a1a1a; } 
+.tag.transoceánico { background-color: #00ffff; } 
+.tag.centro { background-color: #999999; } 
 
 
 .card-content-oferta {
     position: relative;
     width: 100%;
-    /* Degradado oscuro para que el texto sea visible en la parte inferior */
+    
     background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.1) 60%); 
     padding: 20px;
     display: flex;
@@ -920,7 +920,7 @@ nav > div:last-child > a.active:after {
 .precio-nuevo {
     font-family: 'Oswald', sans-serif;
     font-size: 2.5rem;
-    color: #ecad29; /* Precio destacado en amarillo */
+    color: #ecad29; 
     font-weight: 700;
     line-height: 1;
 }
@@ -949,7 +949,7 @@ nav > div:last-child > a.active:after {
     line-height: 1;
 }
 
-/* Media Queries para responsividad de Ofertas */
+
 @media (max-width: 900px) {
     .ofertas-container {
         padding: 100px 30px 40px 30px;
@@ -966,7 +966,7 @@ nav > div:last-child > a.active:after {
         max-width: 60%;
     }
     .ofertas-grid {
-        grid-template-columns: 1fr; /* Una columna en móvil */
+        grid-template-columns: 1fr; 
     }
     .offer-card {
         height: 350px;
@@ -979,7 +979,7 @@ nav > div:last-child > a.active:after {
     .hero-ofertas h1 {
         font-size: 3rem;
     }
-    /* En móviles pequeños, ajustamos los controles de filtro */
+    
     .offer-controls {
         padding: 15px;
     }
@@ -987,6 +987,191 @@ nav > div:last-child > a.active:after {
          gap: 5px;
     }
     .offer-controls label {
-        display: none; /* Ocultar etiquetas en el móvil si hay poco espacio */
+        display: none; 
+    }
+}
+
+
+
+
+
+/* --- ESTILOS ESPECÍFICOS PARA LA PÁGINA DE CONTACTO --- */
+
+
+.contacto-container {
+    padding: 120px 60px 60px 60px;
+    color: #FFFFFFDD;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-contacto {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.hero-contacto h1 {
+    font-size: clamp(3rem, 7vw, 5rem);
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    margin: 0;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero-contacto p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #FFFFFF99;
+    line-height: 1.6;
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; 
+    gap: 50px;
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.info-directa {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-right: 2px solid #333;
+}
+
+.formulario-contacto {
+    padding: 40px;
+}
+
+.info-directa h2, .formulario-contacto h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.2rem;
+    color: #ecad29;
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #3a3a3a;
+    padding-bottom: 10px;
+}
+
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.info-item .icon {
+    font-size: 2rem;
+    color: #ecad29;
+    line-height: 1;
+}
+
+.info-item h3 {
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 0 5px 0;
+    font-weight: 600;
+}
+
+.info-item p {
+    font-size: 0.95rem;
+    margin: 0;
+    color: #FFFFFFBB;
+}
+
+
+
+.input-group-form {
+    margin-bottom: 20px;
+}
+
+.input-group-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #FFFFFFDD;
+}
+
+.input-group-form input, 
+.input-group-form select, 
+.input-group-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    resize: vertical;
+}
+
+.input-group-form input:focus, 
+.input-group-form select:focus, 
+.input-group-form textarea:focus {
+    border-color: #ecad29;
+    outline: none;
+}
+
+.input-group-form.doble {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #ecad29;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #d89e21;
+    transform: translateY(-2px);
+}
+
+
+
+@media (max-width: 900px) {
+    .contacto-container {
+        padding: 100px 30px 40px 30px;
+    }
+    .contacto-grid {
+        grid-template-columns: 1fr; 
+    }
+    .info-directa {
+        border-right: none;
+        border-bottom: 2px solid #333;
+    }
+    .input-group-form.doble {
+        grid-template-columns: 1fr; 
+        gap: 0;
+    }
+}
+@media (max-width: 600px) {
+    .contacto-container {
+        padding: 80px 15px 30px 15px;
+    }
+    .info-directa, .formulario-contacto {
+        padding: 25px;
+    }
+    .hero-contacto h1 {
+        font-size: 3rem;
     }
 }

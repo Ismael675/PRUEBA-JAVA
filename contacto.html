@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Global Express</title>
+    <link rel="stylesheet" href="./style.css"> 
+</head>
+<body>
+    
+    <nav>
+      <div>
+        <div class="svg-container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
+            />
+          </svg>
+        </div>
+        <div>GLOBAL EXPRESS</div>
+      </div>
+      <div>
+        <a href="./index.html">Inicio</a>
+        <a href="./vacaciones.html">Vacaciones</a> 
+        <a href="./destinos.html">Destinos</a>
+        <a href="./vuelos.html">Vuelos</a>
+        <a href="./ofertas.html">Ofertas</a>
+        <a href="./contacto.html" class="active">Contacto</a>
+        <div class="svg-container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+            />
+          </svg>
+        </div>
+        <div class="svg-container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </nav>
+
+    <div class="contacto-container">
+        
+        <div class="hero-contacto">
+            <h1>¿CÓMO PODEMOS AYUDARTE?</h1>
+            <p>Rellena el formulario de contacto o utiliza cualquiera de los métodos directos para comunicarte con nuestro equipo de expertos en viajes.</p>
+        </div>
+
+        <section class="contacto-grid">
+
+            <div class="info-directa">
+                <h2>Información de la Agencia</h2>
+                <div class="info-item">
+                    <span class="icon">📍</span>
+                    <div class="text-content">
+                        <h3>Dirección Central</h3>
+                        <p>Calle Blasco Ibañez 123, 46002, Valencia, España</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="icon">📧</span>
+                    <div class="text-content">
+                        <h3>Correo Electrónico</h3>
+                        <p>soporte@globalexpress.com</p>
+                        <p>reservas@globalexpress.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="icon">📞</span>
+                    <div class="text-content">
+                        <h3>Teléfonos</h3>
+                        <p>Atención al Cliente: +34 91 555 1234</p>
+                        <p>Emergencias 24h: +34 656 875 647</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="icon">⏰</span>
+                    <div class="text-content">
+                        <h3>Horario de Oficina</h3>
+                        <p>Lunes a Viernes: 9:00 - 18:00 </p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="formulario-contacto">
+                <h2>Envíanos un Mensaje</h2>
+                <form action="#" method="POST">
+                    
+                    <div class="input-group-form">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="input-group-form doble">
+                        <div class="input-field-form">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input-field-form">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                    </div>
+
+                    <div class="input-group-form">
+                        <label for="asunto">Asunto</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="" disabled selected>Selecciona un motivo</option>
+                            <option value="reserva">Consulta sobre una Reserva</option>
+                            <option value="presupuesto">Solicitar Presupuesto</option>
+                            <option value="soporte">Soporte Técnico o Pagos</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group-form">
+                        <label for="mensaje">Tu Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Enviar Consulta</button>
+                </form>
+            </div>
+
+        </section>
+
+    </div>
+    
+</body>
+</html>
